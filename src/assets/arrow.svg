@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="10px" viewBox="0 0 14 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 26</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="survey-main-page---detale" transform="translate(-387.000000, -80.000000)" fill-rule="nonzero">
+            <g id="Group-26" transform="translate(387.000000, 80.000000)">
+                <path d="M3.5,7.99991386 C3.33139326,8.00200802 3.16932568,7.92575267 3.05122252,7.788757 L-0.815743464,3.2139756 C-0.976123159,3.03267187 -1.03780111,2.76679395 -0.976964765,2.51899173 C-0.916128416,2.27118952 -0.742296318,2.08023454 -0.522581393,2.01985051 C-0.302866468,1.95946648 -0.0716456721,2.03910117 0.0818115028,2.22800931 L3.5,6.27830433 L6.9181885,2.22800931 C7.07164567,2.03910117 7.30286647,1.95946648 7.52258139,2.01985051 C7.74229632,2.08023454 7.91612842,2.27118952 7.97696476,2.51899173 C8.03780111,2.76679395 7.97612316,3.03267187 7.81574346,3.2139756 L3.94877748,7.79216276 C3.83017229,7.92790853 3.66816799,8.00290465 3.5,7.99991386 Z" id="chevron-down" fill="#847E7D" transform="translate(3.500000, 5.000000) rotate(90.000000) translate(-3.500000, -5.000000) "></path>
+                <path d="M2.5,5 L12.5,5" id="Line-4" stroke="#847E7D" stroke-width="1.5" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
