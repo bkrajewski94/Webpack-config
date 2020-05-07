@@ -1,19 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import Arrow from "./assets/arrow.svg";
-// import Closed from "./assets/abc.svg"
 import ArrowUrl, { ReactComponent as Arrow } from "./assets/arrow.svg";
 import Pobrane from "./assets/pobrane.jpg";
 import "./index.scss";
 import PropTypes from "prop-types";
+import { Abc } from "./abc/Abc";
 
-class Abc extends React.Component {
-  render() {
-    return <div>Jestem klasa</div>;
-  }
-}
-
-const App = () => {
+const App: React.FC = () => {
   return (
     <div className="app">
       <Arrow />
@@ -27,7 +20,7 @@ const App = () => {
         thousand years or so, we will be able to prove it.
       </p>
       <p>- Captain X</p>
-      <Abc />
+      <Abc text="witaj klaso" />
     </div>
   );
 };

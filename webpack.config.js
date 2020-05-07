@@ -23,10 +23,13 @@ module.exports = (env) => {
 
   const config = {
     mode: process.env.NODE_ENV,
-    entry: "./src/index.js",
+    entry: "./src/index.tsx",
     output: {
       path: path.resolve(__dirname, "dist"),
       filename: "[name].[contentHash].js",
+    },
+    resolve: {
+      extensions: [".ts", ".tsx", ".js"],
     },
     optimization: {
       splitChunks: {
@@ -42,12 +45,22 @@ module.exports = (env) => {
     },
     module: {
       rules: [
+        // {
+        //   test: /\.tsx?$/,
+        //   exclude: /node_modules/,
+        //   loader: "ts-loader",
+        // },
+        // {
+        //   test: /\.js$/,
+        //   exclude: /node_modules/,
+        //   use: {
+        //     loader: "babel-loader",
+        //   },
+        // },
         {
-          test: /\.js$/,
+          test: /\.(ts|js)x?$/,
           exclude: /node_modules/,
-          use: {
-            loader: "babel-loader",
-          },
+          loader: "babel-loader",
         },
         {
           test: /\.scss$/,
@@ -91,9 +104,14 @@ module.exports = (env) => {
         },
         {
           test: /\.svg$/,
-          issuer: /\.js$/,
+          issuer: /\.(ts|js)x?$/,
           use: ["@svgr/webpack", "url-loader"],
         },
+        // {
+        //   test: /\.svg$/,
+        //   issuer: /\.(ts|js)x?$/,
+        //   loader: "svg-react-loader",
+        // },
         {
           test: /\.svg$/,
           issuer: /\.scss$/,

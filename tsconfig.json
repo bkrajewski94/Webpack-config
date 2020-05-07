@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "removeComments": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src"]
+}
+
+// {
+//   "compilerOptions": {
+//     "target": "esnext",
+//     "outDir": "./dist/",
+//     "allowJs": true,
+//     "noEmit": true,
+//     "moduleResolution": "node",
+//     "strict": true,
+//     "esModuleInterop": true, // Import non-ES modules as default imports.
+//     "jsx": "react",
+//     "lib": [
+//       "es2015",
+//       "dom.iterable",
+//       "es2016.array.include",
+//       "es2017.object",
+//       "dom"
+//     ],
+//     "module": "es6",
+//     "removeComments": true,
+//     "noUnusedLocals": true,
+//     "noUnusedParameters": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "importHelpers": true,
+//     "experimentalDecorators": true,
+//     "isolatedModules": true,
+//     "resolveJsonModule": true,
+//     "allowSyntheticDefaultImports": true
+//   },
+//   "include": ["src"]
+// }
