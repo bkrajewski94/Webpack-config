@@ -10,19 +10,19 @@ const dotenv = require("dotenv");
 const path = require("path");
 
 module.exports = (env) => {
-  const { MODE, CHECK_BUNDLE } = env;
-  const isProduction = MODE === "production" ? true : false;
+  const { ENV, CHECK_BUNDLE } = env;
   dotenv.config({
-    path: isProduction
-      ? path.resolve(__dirname, ".env")
-      : path.resolve(__dirname, ".env.development"),
+    path:
+      ENV === "production"
+        ? path.resolve(__dirname, ".env")
+        : path.resolve(__dirname, ".env.development"),
   });
+
+  const isProduction = process.env.NODE_ENV === "production" ? true : false;
   const port = process.env.PORT || 3000;
 
-  console.log(process.env);
-
   const config = {
-    mode: MODE,
+    mode: process.env.NODE_ENV,
     entry: "./src/index.js",
     output: {
       path: path.resolve(__dirname, "dist"),
@@ -124,7 +124,7 @@ module.exports = (env) => {
       }),
       new webpack.DefinePlugin({
         "process.env.API_KEY": JSON.stringify(process.env.API_KEY),
-        "process.env.MODE": JSON.stringify(MODE), //should be called NODE_ENV
+        "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
       }),
     ],
   };
